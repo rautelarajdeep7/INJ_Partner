@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content{
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.location, .market, .customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.location>.text, .location>.image, .market>.text, .market>.image, .customer>.text, .customer>.image{
+    width: 47%;
+}
+
+.text>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.text>ul>li{
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 1.5rem;
+}
+
+/* ------------------------------------------------------- Media Query ------------------------------------------------------------------ */
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+    .location, .market, .customer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .location>.text, .location>.image, .market>.text, .market>.image, .customer>.text, .customer>.image {
+        width: 85%;
+    }
+    
+}

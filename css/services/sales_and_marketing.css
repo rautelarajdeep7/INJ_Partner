@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content{
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.boosting_sales{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.boosting_sales>.text, .boosting_sales>.image{
+    width: 47%;
+}
+
+.text>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.text>p{
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.offerings_child{
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.offerings{
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.offerings>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.child1, .child2{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.child1>.offerings_box, .child2>.offerings_box{
+    width: 47%;
+    height: 14rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 7px magenta;
+    background-color: rgb(17, 16, 16);
+    opacity: 0.8;
+}
+
+.child1>.offerings_box:hover, .child2>.offerings_box:hover{
+    opacity: 1;
+}
+
+.offerings_box>i{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+@keyframes svg_scale {
+
+    50% {
+        scale: 1.2;
+    }
+}
+
+.offerings_box>i:hover{
+    animation: svg_scale 0.3s 1 linear;
+}
+
+.offerings_box>p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.offerings_box>h3{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+
+
+/* ------------------------------------------------------ Media Query | index page ------------------------------------------------------ */
+
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+
+    .boosting_sales{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .boosting_sales>.text{
+        width: 90%;
+    }
+    
+    .boosting_sales>.image{
+        width: 90%;
+    }
+
+    .child1, .child2{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        /* width: 100%; */
+    }
+
+    .child1>.offerings_box, .child2>.offerings_box{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 1200.32px) {
+
+    .offerings_box {
+        overflow-y: scroll;
+    }
+}

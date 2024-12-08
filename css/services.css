@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content {
+    padding: 3.5rem 2.5rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.cust_satisfaction{
+    margin-bottom: 3rem;
+}
+
+.cust_satisfaction>h2, .offering>h2{
+    font-family: 'Poppins';
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+.cust_satisfaction>p{
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.5rem;
+}
+
+.offering{
+    padding: 1rem 0;
+}
+
+.offer_item{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+}
+
+.offer_item>.text>h3{
+    font-family: 'Poppins';
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1.8rem;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.offer_item>.text>p, .offer_item>.text>ul{
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.5rem;
+}
+
+.offer_item>.text>ul>li{
+    padding-left: 25px;
+    list-style-position: inside;
+}
+
+.offer_item>.text{
+    width: 47%;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 8px magenta;
+}
+
+.offer_item>.image{
+    width: 47%;
+    opacity: 0.8;
+}
+
+.offer_item>.image>img{
+    border-radius: 8px;
+    box-shadow: 5px 5px 7px white;
+}
+
+/* (max-width: 767.32px) */
+
+
+@media (min-width: 0px) and (max-width: 921.32px) {
+
+    .offer_item{
+        /* margin-bottom: 4rem; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .offer_item>.text,
+    .offer_item>.image {
+        width: 90%;
+    }
+
+}

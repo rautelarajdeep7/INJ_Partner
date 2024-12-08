@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME -INJPartners</title>
+
+    <link rel="icon" href="./img/favicon.webp">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> <!-- Poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!-- Roboto font-->
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- font awesome cdn-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />   <!-- animate css cdn -->
+
+
+    <script src="./js/index.js" defer></script>
+    <script src="./js/hamburger.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="desktop">
+            <div class="logo">
+                <a href="./index.html"> <img src="./img/inj_logo.jpeg" alt="inj_logo" width="100%">
+                </a>
+            </div>
+
+            <button class="hamburger_btn" onclick="hamburger_toggle()"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="header_item_list">
+                <li><a href="./index.html">Home</a></li>
+
+                <li class="service_nav_item"><a href="./html/services.html">Services <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="service_items">
+                        <a href="./html/services/custom_research.html">
+                            <div>Custom Research</div>
+                        </a>
+
+                        <a href="./html/services/data_analytics.html">
+                            <div>Data Analytics</div>
+                        </a>
+
+                        <a href="./html/services/product_development.html">
+                            <div>Product Development</div>
+                        </a>
+
+                        <a href="./html/services/geospatial_insights.html">
+                            <div>Geospatial Insights</div>
+                        </a>
+
+                        <a href="./html/services/sales_and_marketing.html">
+                            <div>Sales and Marketing Intelligence</div>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li><a href="./html/industries.html">Industries</a></li>
+                <li><a href="./html/case_studies.html">Case Studies</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/join_as_expert.html">Join as an Expert</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="hero">
+
+            <div class="left">
+                <h1 class="animate__animated animate__fadeInDown">Expert Insights <br>and Beyond...</h1>
+                <h3 class="animate__animated animate__fadeInLeft">Insights that inspire actions</h3>
+                <button id="get_in_touch" class="animate__animated animate__fadeInUp" onclick="get_in_touch()">Get In
+                    Touch With Us</button><br>
+                <a href="../html/join_as_expert.html"><button id="join_us"
+                        class="animate__animated animate__fadeInUp">Join Us As An Expert</button></a>
+            </div>
+
+            <div class="right">
+                <div class="hero_img animate__animated animate__fadeInRight"><img src="./img/hero3.png" alt="hero"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="rest_content">
+            <hr>
+
+            <!-- <div class="box" style="width: 100px; height: 100px; background-color: yellow;"></div> -->
+
+            <div class="service_set_forth">
+                <h2 class="animate__animated">Services We Set Forth</h2>
+
+                <div class="service_set_forth_items">
+                    <div class="service_set_forth_child_item animate__animated">
+                        <svg class="Qualitative_Research" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                            data-name="Layer 1" viewBox="0 0 512 512">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #6c54b4;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #dfdfec;
+                                    }
+
+                                    .cls-3 {
+                                        fill: #0a367d;
+                                    }
+
+                                    .cls-4 {
+                                        fill: #acaccf;
+                                    }
+
+                                    .cls-5 {
+                                        fill: #503799;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M311.46,334.5l6.31,6.31,16.57,16.52,22.47-22.48L334,312A182.85,182.85,0,0,1,311.46,334.5Z">
+                            </path>
+                            <path class="cls-2"
+                                d="M195.16,21.5C99.12,21.5,21,99.64,21,195.68S99.12,369.87,195.17,369.9a173.34,173.34,0,0,0,105.83-36c.93-.71,1.86-1.43,2.77-2.16a175.83,175.83,0,0,0,27.47-27.48c.73-.91,1.45-1.83,2.17-2.76a173.34,173.34,0,0,0,35.94-105.84C369.35,99.64,291.21,21.5,195.16,21.5Zm0,326.14c-83.78,0-151.94-68.17-151.94-151.95S111.38,43.75,195.16,43.75,347.1,111.91,347.1,195.68,278.94,347.64,195.16,347.64Z">
+                            </path>
+                            <path class="cls-3"
+                                d="M195.16,14.5C95.26,14.5,14,95.78,14,195.68S95.26,376.86,195.17,376.9a180.33,180.33,0,0,0,110.82-38l20.57,20.51,2.84,2.86-1.89,1.89a17.19,17.19,0,0,0,0,24.37l4.17,4.19,0,0,94.6,94.62a43,43,0,0,0,30.19,12.51h.08a42.8,42.8,0,0,0,30.26-73.06l-94.6-94.6,0,0L388.06,328A17.24,17.24,0,0,0,375.9,323h0a17.13,17.13,0,0,0-12.21,5l-1.88,1.89L338.4,306.5a180.25,180.25,0,0,0,38-110.82C376.35,95.78,295.07,14.5,195.16,14.5ZM389.72,339.62l92.16,92.15a35.78,35.78,0,0,1-25.32,61.11h-.07a35.93,35.93,0,0,1-25.24-10.46L339.1,390.26ZM368.6,333a10.27,10.27,0,0,1,14.5,0l1.68,1.68L334.15,385.3l-1.71-1.71a10.2,10.2,0,0,1,0-14.46l4.34-4.35,24.46-24.47Zm-11.79,1.9-22.47,22.48-16.57-16.52-6.31-6.31A182.85,182.85,0,0,0,334,312Zm-23.4-33.33c-.72.93-1.44,1.85-2.17,2.76a175.83,175.83,0,0,1-27.47,27.48c-.91.73-1.84,1.45-2.77,2.16a173.34,173.34,0,0,1-105.83,36C99.12,369.87,21,291.71,21,195.68S99.12,21.5,195.16,21.5,369.35,99.64,369.35,195.68A173.34,173.34,0,0,1,333.41,301.52Z">
+                            </path>
+                            <path class="cls-4"
+                                d="M431.25,482.42a35.93,35.93,0,0,0,25.24,10.46h.07a35.8,35.8,0,0,0,25.32-61.11l-92.16-92.15L339.1,390.26Z">
+                            </path>
+                            <path class="cls-1"
+                                d="M195.16,50.75c-79.92,0-144.94,65-144.94,144.94s65,145,144.94,145h0V50.75Z"></path>
+                            <path class="cls-5"
+                                d="M195.16,50.75V340.64c79.92,0,144.94-65,144.94-145S275.08,50.76,195.16,50.75Z"></path>
+                            <path class="cls-3"
+                                d="M195.16,43.75c-83.78,0-151.94,68.16-151.94,151.94s68.16,152,151.94,152,151.94-68.17,151.94-152S278.94,43.75,195.16,43.75Zm0,296.89h0c-79.92,0-144.94-65-144.94-144.95s65-144.94,144.94-144.94h0c79.92,0,144.94,65,144.94,144.93S275.08,340.64,195.16,340.64Z">
+                            </path>
+                            <path class="cls-4"
+                                d="M332.45,369.13a10.2,10.2,0,0,0,0,14.46l1.71,1.71,50.63-50.64L383.1,333a10.27,10.27,0,0,0-14.5,0l-7.35,7.36-24.46,24.47Z">
+                            </path>
+                        </svg>
+                        <h3>Qualitative Research
+                        </h3>
+                        <div>
+                            Anticipate industry shift before it happens! Tap into a vast network of subject matter
+                            experts
+                            and receive customized, actionable insights tailored to your needs and experience industry
+                            foresight like never before.
+                        </div>
+                        <a href="">View detail</a>
+                    </div>
+                    <div class="service_set_forth_child_item animate__animated">
+                        <svg class="Quantitative_Research" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                            data-name="Layer 1" viewBox="0 0 512 512">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #6c54b4;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #0a367d;
+                                    }
+
+                                    .cls-3 {
+                                        fill: #503799;
+                                    }
+
+                                    .cls-4 {
+                                        fill: #acaccf;
+                                    }
+
+                                    .cls-5 {
+                                        fill: #dfdfec;
+                                    }
+                                </style>
+                            </defs>
+                            <rect class="cls-1" x="46.35" y="199.26" width="48.31" height="155.83"></rect>
+                            <path class="cls-2"
+                                d="M39.35,195.76V358.59a3.5,3.5,0,0,0,3.5,3.5H98.16a3.5,3.5,0,0,0,3.5-3.5V195.76a3.5,3.5,0,0,0-3.5-3.5H42.85A3.5,3.5,0,0,0,39.35,195.76Zm7,3.5H94.66V355.09H46.35Z">
+                            </path>
+                            <path class="cls-1" d="M131,355.08H172a119.13,119.13,0,0,1,7.36-63.58V243.43H131Z"></path>
+                            <path class="cls-2"
+                                d="M186.34,292.2V239.93a3.5,3.5,0,0,0-3.5-3.5H127.53a3.5,3.5,0,0,0-3.5,3.5V358.58a3.5,3.5,0,0,0,3.5,3.5h48.62a3.49,3.49,0,0,0,3.43-4.16,112.82,112.82,0,0,1-2.06-21.44,110.84,110.84,0,0,1,8.56-42.94A3.59,3.59,0,0,0,186.34,292.2Zm-7-.7A119.13,119.13,0,0,0,172,355.08H131V243.43h48.31Z">
+                            </path>
+                            <path class="cls-3" d="M264,184.08H215.71v53.81A118.33,118.33,0,0,1,264,215Z"></path>
+                            <path class="cls-2"
+                                d="M212.21,248.93a3.48,3.48,0,0,0,2.34-.9,111.48,111.48,0,0,1,53.63-26.74,3.48,3.48,0,0,0,2.84-3.43V180.58a3.5,3.5,0,0,0-3.5-3.5H212.21a3.5,3.5,0,0,0-3.5,3.5v64.85a3.5,3.5,0,0,0,3.5,3.5Zm3.5-64.85H264V215a118.33,118.33,0,0,0-48.31,22.89Z">
+                            </path>
+                            <path class="cls-3" d="M353,199.26H304.7v19.35A118.59,118.59,0,0,1,353,236.08Z"></path>
+                            <path class="cls-2"
+                                d="M354.47,245.51a3.5,3.5,0,0,0,5.54-2.84V195.76a3.5,3.5,0,0,0-3.5-3.5H301.2a3.5,3.5,0,0,0-3.5,3.5v26a3.5,3.5,0,0,0,3.14,3.48A111.57,111.57,0,0,1,354.47,245.51ZM304.7,199.26H353v36.82a118.59,118.59,0,0,0-48.31-17.47Z">
+                            </path>
+                            <path class="cls-3"
+                                d="M406.81,355.08h31.71V99.63h-48.3V273.52a119.13,119.13,0,0,1,16.59,81.56Z"></path>
+                            <path class="cls-2"
+                                d="M399.94,360.81a3.5,3.5,0,0,0,2.7,1.27H442a3.5,3.5,0,0,0,3.5-3.5V96.13a3.5,3.5,0,0,0-3.5-3.5h-55.3a3.5,3.5,0,0,0-3.5,3.5V274.54a3.49,3.49,0,0,0,.55,1.88,111.32,111.32,0,0,1,17.49,60.06,112.81,112.81,0,0,1-2.05,21.44A3.51,3.51,0,0,0,399.94,360.81Zm-9.72-87.29V99.63h48.3V355.08H406.81a119.13,119.13,0,0,0-16.59-81.56Z">
+                            </path>
+                            <path class="cls-2"
+                                d="M58.77,410.56a3.5,3.5,0,0,0,3.5,3.5H182.84a3.5,3.5,0,0,0,0-7H62.27A3.5,3.5,0,0,0,58.77,410.56Z">
+                            </path>
+                            <path class="cls-2" d="M62.27,442.23H182.84a3.5,3.5,0,1,0,0-7H62.27a3.5,3.5,0,1,0,0,7Z">
+                            </path>
+                            <path class="cls-2" d="M62.27,470.39H182.84a3.5,3.5,0,1,0,0-7H62.27a3.5,3.5,0,1,0,0,7Z">
+                            </path>
+                            <path class="cls-2"
+                                d="M62.27,498.56H217.71a3.5,3.5,0,0,0,2.47-1l43.21-43.21a3.5,3.5,0,0,0-4.95-4.95l-42.18,42.18h-154a3.5,3.5,0,0,0,0,7Z">
+                            </path>
+                            <circle class="cls-4" cx="289.4" cy="336.49" r="89.59"
+                                transform="translate(-69.57 75.49) rotate(-13.28)"></circle>
+                            <path class="cls-2"
+                                d="M289.4,433.08a96.33,96.33,0,0,0,69.77-29.86l25.65,25.2L372,442.52a3.51,3.51,0,0,0,.24,5l58.36,53a26,26,0,0,0,36.64-1.77h0A25.95,25.95,0,0,0,465.5,462l-58.36-53a3.5,3.5,0,0,0-2.52-.91,3.54,3.54,0,0,0-2.43,1.15l-12.66,13.94L363.83,398a96.56,96.56,0,1,0-74.43,35.09ZM405,416.58l55.77,50.63a18.95,18.95,0,0,1-25.47,28.06l-55.76-50.63ZM289.4,246.9a89.59,89.59,0,1,1-89.6,89.59A89.69,89.69,0,0,1,289.4,246.9Z">
+                            </path>
+                            <path class="cls-3"
+                                d="M435.32,495.27a18.95,18.95,0,0,0,25.47-28.06L405,416.58l-25.46,28.06Z">
+                            </path>
+                            <circle class="cls-5" cx="92.74" cy="96.13" r="27.56"></circle>
+                            <path class="cls-2"
+                                d="M92.74,61.56a34.57,34.57,0,1,0,26.35,56.89l24.38,20.82a34.59,34.59,0,1,0,4.42-5.43l-24.8-21.19a34.53,34.53,0,0,0,0-33l21.31-17.53A34.65,34.65,0,1,0,140.85,56L119.14,73.85A34.5,34.5,0,0,0,92.74,61.56Zm79.6,69.13a27.56,27.56,0,1,1-27.57,27.56A27.59,27.59,0,0,1,172.34,130.69Zm0-116.49a27.57,27.57,0,1,1-27.57,27.57A27.6,27.6,0,0,1,172.34,14.2ZM92.74,123.69A27.57,27.57,0,1,1,120.3,96.13,27.59,27.59,0,0,1,92.74,123.69Z">
+                            </path>
+                            <path class="cls-5"
+                                d="M172.34,185.81a27.56,27.56,0,1,0-27.57-27.56A27.59,27.59,0,0,0,172.34,185.81Z">
+                            </path>
+                            <circle class="cls-5" cx="172.34" cy="41.77" r="27.56"></circle>
+                        </svg>
+                        <h3>Quantitative Research
+                        </h3>
+                        <div>Make data-driven decisions & optimize strategies for maximum effectiveness and
+                            profitability by
+                            understanding customer behaviors, consumer preferences, market trends, performance metrics &
+                            much more.
+                        </div>
+                        <a href="">View detail</a>
+                    </div>
+                    <div class="service_set_forth_child_item animate__animated">
+                        <svg class="Business_Research" xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                            data-name="Layer 1" viewBox="0 0 512 512">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #6c54b4;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #0a367d;
+                                    }
+
+                                    .cls-3 {
+                                        fill: #503799;
+                                    }
+
+                                    .cls-4 {
+                                        fill: #dfdfec;
+                                    }
+
+                                    .cls-5 {
+                                        fill: #acaccf;
+                                    }
+                                </style>
+                            </defs>
+                            <rect class="cls-1" x="85.7" y="380.03" width="42.2" height="60.31"></rect>
+                            <path class="cls-2"
+                                d="M131.41,447.34a3.5,3.5,0,0,0,3.5-3.5V376.53a3.5,3.5,0,0,0-3.5-3.5H82.2a3.5,3.5,0,0,0-3.5,3.5v67.31a3.5,3.5,0,0,0,3.5,3.5ZM85.7,380h42.21v60.31H85.7Z">
+                            </path>
+                            <path class="cls-3" d="M277.07,450.47h44.87V279.93a134.48,134.48,0,0,1-44.87,8.6Z"></path>
+                            <rect class="cls-4" x="49.79" y="472.89" width="224.58" height="16.87"></rect>
+                            <rect class="cls-5" x="274.37" y="472.89" width="74.02" height="16.87"></rect>
+                            <rect class="cls-1" x="176.62" y="326.84" width="44.87" height="123.63"></rect>
+                            <path class="cls-2"
+                                d="M173.16,457.47H225a3.46,3.46,0,0,0,2.47-1,3.5,3.5,0,0,0,1-2.48l-.08-130.62a3.5,3.5,0,0,0-3.5-3.5H173.08a3.48,3.48,0,0,0-3.5,3.5L169.66,454A3.5,3.5,0,0,0,173.16,457.47Zm48.29-130.63.08,123.63H176.66l-.08-123.63Z">
+                            </path>
+                            <path class="cls-5"
+                                d="M404.06,328.59A18.41,18.41,0,0,0,373,348.33l56.62,89.09a18.41,18.41,0,1,0,31.07-19.75Z">
+                            </path>
+                            <path class="cls-2"
+                                d="M466.59,413.92,410,324.83a25.44,25.44,0,0,0-32-9.49l-30.54-48.22a135.49,135.49,0,0,0,62.39-114c0-74.69-60.77-135.47-135.47-135.47S138.9,78.4,138.9,153.09a135.3,135.3,0,0,0,50.66,105.56,368.38,368.38,0,0,1-50.12,34.73c-47.8,27.38-83.22,32.27-83.57,32.31a3.5,3.5,0,0,0,.45,7l.45,0c1.48-.19,36.87-5,85.79-33a379.58,379.58,0,0,0,52.79-36.6,134.64,134.64,0,0,0,74.72,25.43v169h58.87V277.07a132.31,132.31,0,0,0,12.53-6.32l30.61,48.34a25.4,25.4,0,0,0-5,33l56.62,89.09a25.24,25.24,0,0,0,15.92,11.17,25.77,25.77,0,0,0,5.57.62,25.17,25.17,0,0,0,13.58-4A25.43,25.43,0,0,0,466.59,413.92ZM321.94,450.47H277.07V288.53a134.48,134.48,0,0,0,44.87-8.6Zm7-181.09c-1.15.55-2.32,1.07-3.5,1.59s-2.32,1-3.5,1.46a127.79,127.79,0,0,1-44.87,9.1c-.9,0-1.79,0-2.7,0h-.8c-1.17,0-2.33,0-3.5-.07a127.71,127.71,0,0,1-69.19-23.07q11.7-10,22.88-21a477.7,477.7,0,0,0,50.61-59.28q15.92-21.91,30.17-46.34l20.61,24.14c-4-19.88-2.78-47.54.64-68.47-14.27,12-33.88,25.19-51.42,32.76-2.41,1-4.78,2-7.09,2.79l7.09,1.22,24.08,4.13Q286.65,148.52,274.37,166C248,203.76,220.54,232.44,195,254.08a128.33,128.33,0,0,1-49.14-101c0-70.83,57.64-128.47,128.47-128.47h0a128.46,128.46,0,0,1,54.57,244.76ZM455,443.09a18.4,18.4,0,0,1-25.41-5.67L373,348.33a18.41,18.41,0,1,1,31.07-19.74l56.62,89.08A18.43,18.43,0,0,1,455,443.09Z">
+                            </path>
+                            <path class="cls-4"
+                                d="M274.37,24.62c-70.83,0-128.47,57.64-128.47,128.47a128.33,128.33,0,0,0,49.14,101c25.5-21.64,52.94-50.32,79.33-88.09V124.2L267.28,123c2.31-.81,4.68-1.75,7.09-2.79V24.62Z">
+                            </path>
+                            <path class="cls-4"
+                                d="M274.37,210V178.1a477.7,477.7,0,0,1-50.61,59.28q-11.17,11.06-22.88,21a127.71,127.71,0,0,0,69.19,23.07c1.17,0,2.33.07,3.5.07h.8V210Z">
+                            </path>
+                            <path class="cls-5"
+                                d="M402.84,153.09A128.62,128.62,0,0,0,274.37,24.62v95.57c17.54-7.57,37.15-20.77,51.42-32.76-3.42,20.93-4.67,48.59-.64,68.47l-20.61-24.14q-14.24,24.39-30.17,46.34V281.56c.91,0,1.8,0,2.7,0a127.79,127.79,0,0,0,44.87-9.1c1.18-.47,2.34-1,3.5-1.46s2.35-1,3.5-1.59A128.64,128.64,0,0,0,402.84,153.09Z">
+                            </path>
+                            <path class="cls-5" d="M298.45,128.33l-24.08-4.13V166Q286.61,148.5,298.45,128.33Z"></path>
+                            <path class="cls-2"
+                                d="M42.79,469.39v23.87a3.5,3.5,0,0,0,3.5,3.5h305.6a3.49,3.49,0,0,0,3.5-3.5V469.39a3.5,3.5,0,0,0-3.5-3.5H46.29A3.5,3.5,0,0,0,42.79,469.39Zm7,3.5h298.6v16.87H49.79Z">
+                            </path>
+                        </svg>
+                        <h3>Business Research
+                        </h3>
+                        <div>Drive growth by identifying new opportunities. We are the compass that guides organizations
+                            through the seas of market uncertainty, reveal horizon of opportunity & help navigate
+                            towards
+                            the shores of success.
+                        </div>
+                        <a href="">View detail</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="our_client">
+                <h2 class="animate__animated">Trusted by Clients...</h2>
+                <div class="clients_list_box">
+                    <div>
+                        <div><img src="./img/partner_client/Google.png" alt="google" width="100%"></div>
+                        <div><img src="./img/partner_client/microsoft.png" alt="microsoft" width="100%"></div>
+                        <div><img src="./img/partner_client/amex.png" alt="amex" width="100%"></div>
+                        <div><img src="./img/partner_client/flipkart.png" alt="flipkart" width="100%"></div>
+                        <div><img src="./img/partner_client/whatsapp.png" alt="whatsapp" width="100%"></div>
+                    </div>
+
+                    <div>
+                        <div><img src="./img/partner_client/twitter.png" alt="twitter" width="100%"></div>
+                        <div><img src="./img/partner_client/netflix.png" alt="netflix" width="100%"></div>
+                        <div><img src="./img/partner_client/blackberry.png" alt="blackberry" width="100%"></div>
+                        <div><img src="./img/partner_client/instagram.png" alt="instagram" width="100%"></div>
+                        <div><img src="./img/partner_client/norton.png" alt="norton" width="100%"></div>
+                    </div>
+
+
+                    <div>
+                        <div><img src="./img/partner_client/adobe.png" alt="twitter" width="100%"></div>
+                        <div><img src="./img/partner_client/tesla.png" alt="tesla" width="100%"></div>
+                        <div><img src="./img/partner_client/cocacola.png" alt="cocacola" width="100%"></div>
+                        <div><img src="./img/partner_client/oracle.png" alt="oracle" width="100%"></div>
+                        <div><img src="./img/partner_client/vw.png" alt="volkswagen" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="expertise">
+                <h2 class="animate__animated">Our Expertise</h2>
+
+                <div class="expertise_item_box animate__animated">
+
+                    <div class="expertise_item animate__animated"> <i class="fa-solid fa-piggy-bank"></i> <br><br>
+                        Healthcare
+                    </div>
+
+                    <div class="expertise_item animate__animated"> <i class="fa-solid fa-industry"></i> <br><br>
+                        IT/Technology
+                    </div>
+
+                    <div class="expertise_item animate__animated"> <i class="fa-solid fa-hand-holding-heart"></i> <br><br>
+                        BFSI
+                    </div>
+
+                    <div class="expertise_item animate__animated">
+                        <i class="fa-solid fa-book-open"></i> <br><br>
+                        Utilities
+                    </div>
+
+                    <div class="expertise_item animate__animated">
+                        <i class="fa-solid fa-lightbulb"></i> <br><br>
+                        Automotive
+                    </div>
+
+                    <div class="expertise_item animate__animated">
+                        <i class="fa-solid fa-wave-square"></i> <br><br>
+                        Manufacturing
+                    </div>
+
+                    <div class="expertise_item animate__animated">
+                        <i class="fa-solid fa-star"></i> <br><br>
+                        Retail
+                    </div>
+
+                    <div class="expertise_item animate__animated">
+                        <i class="fa-solid fa-cart-shopping"></i> <br><br>
+                        Telecom
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="counter">
+                <div class="clients_count">
+                    <div>0+</div>
+                    <div>International Clients</div>
+                    <div>Serving across the globe</div>
+                </div>
+                <div class="global_count">
+                    <div>0+</div>
+                    <div>Countries</div>
+                    <div>Expansion over the years</div>
+                </div>
+                <div class="industries_count">
+                    <div>0</div>
+                    <div>Industries</div>
+                    <div>Market Research across Multiple Industries.</div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="top">
+            <div class="footer_logo animate__animated">
+                <img src="./img/footer_logo.png" alt="inj_footer_logo" width="100%">
+            </div>
+        </div>
+        <div class="mid">
+            <div class="mid_left">
+                <h3>HONG KONG</h3>
+                <p>Unit 305-7, 3/F​., Laford Center, 838 Lai Chi Kok Road, Cheung Sha Wan, Kawloon, Hong Kong
+                    <br>+852-906-67994
+                </p>
+            </div>
+            <div class="mid_mid">
+                <h3>USA</h3>
+                <p>4100 SW Modern Way(107), Bentonville, Arkansas- 72713 <br>+1-469-756-5056</p>
+            </div>
+            <div class="mid_right">
+                <h3>INDIA</h3>
+                <p>Suite 307, Third Floor, ARV Business Park, H-28, Sec - 63, Noida (U.P.) India, 201301</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="copyright">
+                Copyright © 2024 INJPartners
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <div class="backdrop_hide_get_in_touch" onclick="get_in_touch()"></div>
+    <!-- <div class="backdrop_hide_join_us" onclick="join_us()"></div> -->
+
+
+    <div class="get_in_touch_form_hide">
+        <h2>Request a Quote</h2>
+
+        <form action="">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" placeholder="Name" autofocus> <br><br>
+
+            <div class="email_phone">
+                <div class="email">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="phone">
+                    <label for="phone">Phone Number</label> <br>
+                    <input type="tel" name="phone" placeholder="Phone Number" required> <br><br>
+                </div>
+
+            </div>
+
+
+            <label for="message">Message</label> <br>
+            <textarea name="message" placeholder="Message" rows="4"></textarea> <br><br>
+
+            <input type="Submit" onclick="get_in_touch()" value="Submit">
+
+
+        </form>
+
+        <div class="close_btn" onclick="get_in_touch()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+
+    <script>
+
+
+
+    </script>
+</body>
+
+</html>

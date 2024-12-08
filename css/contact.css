@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+h1 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3rem;
+    background-color: aliceblue;
+    padding: 3rem 0;
+    font-weight: 600;
+}
+
+.content {
+    padding: 2.5rem 1rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.content>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    /* margin: 3rem 0; */
+    text-align: center;
+    color: white;
+
+}
+
+.headquarters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 1.8rem 0;
+    perspective: 2000px;
+    overflow: hidden;
+}
+
+.headquarters_box {
+    position: relative;
+    border: 2px solid slateblue;
+    width: 17rem;
+    height: 11rem;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 2px 2px 5px blue;
+}
+
+.headquarters_box:hover {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0.5rem 0; */
+}
+
+
+.front {
+    background-color: black;
+    color: white;
+}
+
+.front>h3 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.back {
+    background-color: rgb(30, 19, 19);
+    color: white;
+    transform: rotateY(180deg);
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.back>h3 {
+    margin-bottom: 1rem;
+}
+
+.front>svg {
+    font-size: 4.5rem;
+    color: indigo;
+}
+
+.contact_details>.left>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+}
+
+
+.contact_details {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.left {
+    width: 40%;
+}
+
+
+.left>h2 {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.left>p {
+    color: rgb(186, 186, 192);
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.left>a {
+    text-decoration: none;
+    color: rgb(186, 186, 192);
+    display: inline-block;
+    margin-bottom: 1.3rem;
+}
+
+.phone_no {
+    color: rgb(186, 186, 192);
+    display: inline-block;
+    margin-bottom: 1.3rem;
+}
+
+.map {
+    width: 95%;
+    height: 15rem;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 15px white;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0.5);
+}
+
+.right {
+    background-color: whitesmoke;
+    width: 40%;
+    padding: 1rem 2rem;
+    box-shadow: 1px 1px 25px gray;
+    border-radius: 5px;
+}
+
+
+form h2 {
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgb(80, 80, 80);
+}
+
+form input,
+textarea {
+    width: 98%;
+    height: 2.2rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+textarea {
+    padding: 0.5rem 0.5rem;
+}
+
+[type="submit"] {
+    background-color: #191970;
+    color: white;
+    text-align: center;
+    width: 6rem;
+    height: 2.5rem;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+
+/* ------------------------------------------------------ Media Query | contact page ------------------------------------------------------ */
+
+
+@media (min-width: 0px) and (max-width: 421.32px) {
+
+    .contact_details {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+@media (min-width: 421.33px) and (max-width: 767.32px) {
+
+    .contact_details {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.32px) {}
+
+
+/*
+@media (min-width: 270px) and (max-width: 920.3px) {
+}
+
+@media (min-width: 920.3px) {
+
+}

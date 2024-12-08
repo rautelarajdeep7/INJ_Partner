@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content{
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.prod_dev_support{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.prod_dev_support>.text, .prod_dev_support>.image{
+    width: 47%;
+}
+
+.text>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.text>p{
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    text-align: right;
+}
+
+/* ------------------------------------------------------- Media Query ------------------------------------------------------------------ */
+
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+    .prod_dev_support{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .prod_dev_support>.text, .prod_dev_support>.image{
+        width: 85%;
+    }
+
+    .text>h2, .text>p{
+        text-align: left;
+    }
+
+}

@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content{
+    padding: 3rem 2rem;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.leadership{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.leadership>.text{
+    width: 47%;
+}
+
+.leadership>.image{
+    width: 47%;
+}
+
+.leadership>.text>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.leadership>.text>p{
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.bespoke, .financial_research, .procurement{
+    margin-bottom: 5rem;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+
+.bespoke>h2, .financial_research>h2, .procurement>h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+
+.bespoke_child, .financial_research_child{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.bespoke_boxes{
+    width: 26%;
+    height: 19rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 12px magenta;
+    background-color: rgb(17, 16, 16);
+    opacity: 0.8;
+}
+
+.financial_research_boxes{
+    width: 26%;
+    height: 18rem;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 3px 3px 12px magenta;
+    background-color: rgb(17, 16, 16);
+    opacity: 0.8;
+}
+
+.bespoke_boxes>i, .procurementchild_box>i{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.bespoke_boxes>i:hover, .procurementchild_box>i:hover{
+    animation: svg_scale 0.3s 1 linear;
+}
+
+@keyframes svg_scale {
+
+    50% {
+        scale: 1.2;
+    }
+}
+
+.bespoke_boxes>h3{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.financial_research_boxes>h3, .procurementchild_box>h3{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.bespoke_boxes>p, .financial_research_boxes>p, .procurementchild_box>p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(211, 211, 217);
+    word-spacing: 6px;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+
+.procurement_child_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.procurement_child_top>.procurementchild_box{
+    width: 47%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 7px magenta;
+    background-color: rgb(17, 16, 16);
+    opacity: 0.8;
+}
+
+.procurement_child_bottom>.procurementchild_box{
+    width: 97%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 7px magenta;
+    opacity: 0.8;
+    background-color: rgb(17, 16, 16);
+    margin: auto;
+}
+
+.bespoke_boxes:hover, .financial_research_boxes:hover, .procurement_child_top>.procurementchild_box:hover, .procurement_child_bottom>.procurementchild_box:hover{
+    opacity: 1;
+}
+
+
+/* ------------------------------------------------------ Media Query | index page ------------------------------------------------------ */
+
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+
+    .leadership{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .leadership>.text{
+        width: 90%;
+    }
+    
+    .leadership>.image{
+        width: 90%;
+    }
+
+    .procurement_child_top{
+        width: 100%;
+    }
+
+    .bespoke_child, .financial_research_child, .procurement_child_top{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .procurement_child_top>.procurementchild_box, .procurement_child_bottom>.procurementchild_box{
+        width: 90%;
+        overflow-y: scroll;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 900.32px) {
+    .bespoke_boxes {
+        width: 90%;
+        overflow-y: scroll;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1080.32px) {
+    .financial_research_boxes {
+        width: 90%;
+        overflow-y: scroll;
+    }
+}

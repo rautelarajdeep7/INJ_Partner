@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+/* ------------------------------------------------------ HERO section ------------------------------------------------------ */
+.hero {
+    padding: 6.5rem 2.2rem;
+    /* padding-left: 2.2rem; */
+    /* background-image: linear-gradient(to bottom right, indigo 60%, rgb(23, 21, 21)); */
+    background-image: linear-gradient(to bottom right, black, indigo, magenta, black);
+
+    position: relative;
+    display: flex;
+    gap: 0;
+
+    /* background-image: url('../img/hero2.gif');
+    background-size: cover; */
+}
+
+
+.hero>.left {
+    width: 55%;
+}
+
+
+.hero>.right {
+    width: 45%;
+}
+
+.hero>.left>h1 {
+    font-weight: 900;
+    font-size: 4.2rem;
+    animation-delay: 0.3s;
+    color: whitesmoke;
+    font-family: 'Poppins';
+    /* letter-spacing: px; */
+    line-height: 4.6rem;
+}
+
+.hero>.left>h3 {
+    margin-top: 1.5rem;
+    animation-delay: 0.5s;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#get_in_touch {
+    background-color: #191970;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 3.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+    animation-delay: 1s;
+    font-family: 'Poppins';
+}
+
+#get_in_touch:hover {
+    scale: 1.03;
+    border: 1px solid black;
+    box-shadow: 4px 4px 3px rgb(52, 52, 52);
+}
+
+#join_us {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1.18rem;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+    transition: 0.2s;
+    cursor: pointer;
+    animation-delay: 1.3s;
+    font-family: 'Poppins';
+}
+
+#join_us:hover {
+    scale: 1.03;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 4px 4px 3px rgb(52, 52, 52);
+}
+
+.hero>.right>.hero_img {
+
+    width: 48%;
+    position: absolute;
+    /* top: 4.7rem; */
+    top: -1.4rem;
+    right: 3rem;
+    /* width: 48rem; */
+    /* width: 61%; */
+    /* opacity: 0.3; */
+}
+
+/* ------------------------------------------------------ Services Set forth section ------------------------------------------------------ */
+
+.service_set_forth {
+    padding: 2rem 0;
+    overflow: hidden;
+    /* background-image: linear-gradient(to bottom right, black 20%, indigo); */
+}
+
+.service_set_forth>h2 {
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Poppins';
+    animation-delay: 0.2s;
+}
+
+.service_set_forth_items {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* animation-delay: 0.2s; */
+}
+
+.service_set_forth_items>div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service_set_forth_items>div:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service_set_forth_items>div:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.service_set_forth_child_item {
+    position: relative;
+    padding: 3rem 1rem;
+    width: 17rem;
+    background-color: rgb(246, 245, 245);
+    height: 18rem;
+    transition: 0.2s;
+    background-image: linear-gradient(to bottom right, black 85%, rgb(37, 13, 134));
+    color: whitesmoke;
+    border: 2px solid rgb(109, 109, 251);
+
+}
+
+.service_set_forth_child_item:hover {
+    scale: 1.04;
+    box-shadow: 2px 2px 5px magenta;
+}
+
+
+.service_set_forth_child_item>svg {
+    width: 4rem;
+    position: absolute;
+    top: -1.5rem;
+    background-color: none;
+    scale: 1;
+}
+
+@keyframes svg_scale {
+
+    50% {
+        scale: 1.2;
+    }
+}
+
+.service_set_forth_child_item>svg:hover {
+    animation: svg_scale 0.3s 1 linear;
+}
+
+.service_set_forth_child_item>h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+.service_set_forth_child_item>div {
+    font-size: 1rem;
+    word-spacing: 3px;
+    /* font-family: Roboto; */
+}
+
+.service_set_forth_child_item>a {
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    color: white;
+}
+
+
+/* ------------------------------------------------------ Clients logo section ------------------------------------------------------ */
+
+.our_client {
+    /* background-image: linear-gradient(to right, black, #20207a); */
+    /* background-image: linear-gradient(to bottom left, black 30%, indigo); */
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+.our_client>h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    animation-delay: 0.2s;
+    font-family: 'Poppins';
+}
+
+.our_client>.clients_list_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* background-image: linear-gradient(to bottom right, black 65%, rgb(23, 23, 23)); */
+    /* opacity: 0.2; */
+    width: 70%;
+    margin: auto;
+    padding: 1.4em 0;
+    /* border: 2px solid rgb(109, 109, 251); */
+    /* animation-delay: 0.3s; */
+
+}
+
+.our_client>.clients_list_box>div {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.our_client>.clients_list_box>div>div {
+    width: 3rem;
+}
+
+.our_client>.clients_list_box>div>div:hover {
+    animation: svg_scale 0.3s 1 linear;
+}
+
+/* ------------------------------------------------------ Expertise ------------------------------------------------------ */
+
+.expertise {
+    padding: 2rem 0;
+    overflow: hidden;
+    /* background-image: linear-gradient(to bottom right, black 40%, rgb(217, 210, 210)); */
+    /* background-image: linear-gradient(to bottom right, black, indigo, black); */
+}
+
+.expertise>h2 {
+    /* margin-bottom: 5rem; */
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: white;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+}
+
+.expertise>.expertise_item_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.expertise_item_box>.expertise_item {
+    width: 12rem;
+    height: 7rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid rgb(96, 1, 164);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    box-shadow: 2px 2px 5px blue;
+}
+
+.expertise_item_box>.expertise_item:hover {
+    box-shadow: 2px 2px 8px magenta;
+}
+
+.expertise_item_box>.expertise_item>i {
+    font-size: 4rem;
+    color: rgb(124, 28, 193);
+}
+
+.expertise_item_box>.expertise_item>i:hover {
+    animation: svg_scale 0.3s 1 linear;
+}
+
+/* ------------------------------------------------------ Counter ------------------------------------------------------ */
+
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: rgba(17,24,34,255); */
+    /* background-image: linear-gradient(to bottom right, #0672cb, black); */
+    /* width: 100vw; */
+    gap: 6rem;
+    padding: 3.5rem 0;
+    margin: auto;
+}
+
+.counter>div{
+    width: 8.7rem;
+    height: 8.7rem;
+    border-radius: 5px;
+    /* background-color: rgba(1,43,89,255); */
+    /* background-image: linear-gradient(to bottom left, black 88% , magenta); */
+    background-color: black;
+    color: rgb(124, 28, 193);
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 8px magenta;
+}
+
+
+.clients_count>div:nth-child(1), .global_count>div:nth-child(1), .industries_count>div:nth-child(1){
+    font-size: 4rem;
+}
+
+.clients_count>div:nth-child(2), .global_count>div:nth-child(2), .industries_count>div:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.clients_count>div:nth-child(3), .global_count>div:nth-child(3), .industries_count>div:nth-child(3){
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+/* ------------------------------------------------------ Backdrop ------------------------------------------------------ */
+
+body {
+    position: relative;
+}
+
+.backdrop_hide_get_in_touch {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+.backdrop_show_get_in_touch {
+    display: block;
+}
+
+.backdrop_hide_join_us {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+.backdrop_show_join_us {
+    display: block;
+}
+
+.body_overflow_stop {
+    overflow-y: hidden
+}
+
+/* ------------------------------------------------------ Get in Touch Form ------------------------------------------------------ */
+
+.get_in_touch_form_hide {
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+
+    display: none;
+
+    width: 50%;
+    height: 22.5rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+
+form {
+    width: 100%;
+}
+
+.get_in_touch_form_show {
+    display: block;
+}
+
+.get_in_touch_form_hide>h2 {
+    text-align: center;
+    margin-bottom: 4%;
+    font-family: Poppins;
+}
+
+.get_in_touch_form_hide>form input {
+    line-height: 1.7rem;
+    padding-left: 0.5rem;
+}
+
+.get_in_touch_form_hide>form label {
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+}
+
+.get_in_touch_form_hide>form>.email_phone {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.email_phone>.email {
+    width: 46.5%;
+    /* width: 8rem; */
+}
+
+.email_phone>.phone {
+    width: 46.5%;
+    /* width: 8rem; */
+}
+
+.get_in_touch_form_hide>form>[name="name"] {
+    width: 96%;
+}
+
+.get_in_touch_form_hide>form>.email_phone [type="email"] {
+    width: 99%;
+}
+
+.get_in_touch_form_hide>form [type="tel"] {
+    width: 99%;
+}
+
+.get_in_touch_form_hide>form>textarea {
+    padding: 0.5rem 0.5rem;
+    width: 96%;
+}
+
+.get_in_touch_form_hide>form>[type="submit"] {
+    background-color: #191970;
+    color: white;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.get_in_touch_form_hide>.close_btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.rest_content {
+    background-image: linear-gradient(to bottom right, black 40%, indigo, black);
+}
+
+/* ------------------------------------------------------ Media Query | index page ------------------------------------------------------ */
+
+
+@media (min-width: 0px) and (max-width: 335.32px) {
+
+    .hero>.left>h1 {
+        font-size: 2.2rem;
+        animation-delay: 0.3s;
+        color: whitesmoke;
+        font-family: 'Poppins';
+        /* letter-spacing: px; */
+        line-height: 2.6rem;
+    }
+
+    .hero>.left>h3 {
+        margin-top: 0.3rem;
+        animation-delay: 0.5s;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .hero>.right>.hero_img {
+        display: none;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+
+    .get_in_touch_form_hide {
+        width: 85%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.32px) {}
+
+
+/*
+@media (min-width: 270px) and (max-width: 920.3px) {
+}
+
+@media (min-width: 920.3px) {
+
+}

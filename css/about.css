@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    background-color: aliceblue;
+    padding: 3rem 0;
+}
+
+.content {
+    padding: 3.5rem 0;
+    background-image: linear-gradient(to bottom, black, indigo, black);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.our_story {
+    background-image: url('../img/about_section/india_gate7.jpg');
+    /* opacity: 0.5; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 8rem 4.8rem; */
+    /* padding: 10% 4.8%; */
+
+    padding: 10rem 4.8%;
+    color: white;
+
+    font-weight: 400;
+    word-spacing: 6px;
+    position: relative;
+}
+
+
+
+.our_story>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: left;
+    color: white;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.our_story>p{
+    /* padding-left: 2rem; */
+    padding-left: 2.5%;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.vision{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.mission{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    flex-wrap: wrap;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.vision .image{
+    width: 47%;
+    box-shadow: 3px 3px 7px white;
+}
+
+.vision .text{
+    width: 47%;
+}
+
+.mission .image{
+    width: 47%;
+    box-shadow: 3px 3px 7px white;
+}
+
+.mission .text{
+    width: 47%;
+}
+
+
+.vision h3{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.mission h3{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.vision p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+.mission p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8rem;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------------------------------ Media Query | About page ------------------------------------------------------ */
+
+
+/* @media (min-width: 0px) and (max-width: 421.32px) {
+
+} */
+
+@media (min-width: 0px) and (max-width: 767.32px) {
+
+    .vision {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .mission {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+
+    .vision .image{
+        width: 90%;
+    }
+    
+    .vision .text{
+        width: 90%;
+    }
+    
+    .mission .image{
+        width: 90%;
+    }
+    
+    .mission .text{
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.32px) {}
+
+
