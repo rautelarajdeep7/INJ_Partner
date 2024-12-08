@@ -16,6 +16,7 @@ header *{
     align-items: center;
     flex-wrap: wrap;
     padding: 0 1.5rem;
+    position: relative;
     /* background-color: black; */
 }
 
@@ -124,10 +125,9 @@ header *{
         height: 100vh;
         position: absolute;
         top: 2.91rem;
-        right: 0;
+        right: -14rem;
         z-index: 10;
         background-color: white;
-        transform: translateX(13rem);
         transition: 0.5s;
         flex-direction: column;
         justify-content:start;
@@ -164,7 +164,7 @@ header *{
 }
 
 .show{
-    transform: translateX(0%);
+    right: 0;
     /* display: inline-block; */
 }
 
