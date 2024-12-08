@@ -31,7 +31,7 @@ let forIndustryItem = setInterval(() => {
 
             setTimeout(()=>{
                 item.classList.remove('animate__fadeInUp');
-            },1000)
+            },1500)
         })
         
 
