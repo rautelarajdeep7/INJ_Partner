@@ -49,7 +49,7 @@ let forHQ = setInterval(() => {
                 item.classList.remove('animate__animated');
                 item.classList.remove('animate__fadeInUp');
             })
-        },1000)
+        },1500)
 
         clearInterval(forHQ);
     }
