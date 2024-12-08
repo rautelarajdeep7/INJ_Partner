@@ -10,13 +10,16 @@ header *{
     font-family: 'Roboto';
 }
 
+body,html{
+    overflow-x: hidden;
+}
+
 .desktop{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 0 1.5rem;
-    position: relative;
     /* background-color: black; */
 }
 
@@ -117,7 +120,8 @@ header *{
     .desktop {
         align-items: center;
         justify-content: space-between;
-        flex-wrap: nowrap;        
+        flex-wrap: nowrap;  
+        position: relative;
     }
 
     .header_item_list{
